@@ -67,6 +67,9 @@ jobs:
           name: Lint
           command: mix nerves.system.lint nerves_defconfig
       - run:
+          name: Validate Hex package
+          command: mix hex.build
+      - run:
           name: Create artifact dir
           command: mkdir -p /nerves/deploy/system/artifacts
       - run:
