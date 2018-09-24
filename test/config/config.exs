@@ -2,8 +2,8 @@ use Mix.Config
 
 # Repository specific configuration
 
-system = :nerves_system_bbb
-platform = "bbb"
+system = :nerves_system_vibeq
+platform = "vibeq"
 arch = "arm"
 
 app_part_devparth = "/dev/mmcblk0p4"

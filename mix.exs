@@ -1,7 +1,7 @@
 defmodule NervesSystemBbb.MixProject do
   use Mix.Project
 
-  @app :nerves_system_bbb
+  @app :nerves_system_vibeq
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -26,7 +26,7 @@ defmodule NervesSystemBbb.MixProject do
   end
 
   defp bootstrap(args) do
-    System.put_env("MIX_TARGET", "bbb")
+    System.put_env("MIX_TARGET", "vibeq")
     Application.start(:nerves_bootstrap)
     Mix.Task.run("loadconfig", args)
   end
@@ -34,10 +34,11 @@ defmodule NervesSystemBbb.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
-      ],
+      # artifact_sites: [
+      #   {:github_releases, "nerves-project/#{@app}"}
+      # ],
       platform: Nerves.System.BR,
+      build_runner: Nerves.Artifact.BuildRunners.Docker,
       platform_config: [
         defconfig: "nerves_defconfig"
       ],
