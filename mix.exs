@@ -38,7 +38,6 @@ defmodule NervesSystemBbb.MixProject do
       #   {:github_releases, "nerves-project/#{@app}"}
       # ],
       platform: Nerves.System.BR,
-      build_runner: Nerves.Artifact.BuildRunners.Docker,
       platform_config: [
         defconfig: "nerves_defconfig"
       ],
