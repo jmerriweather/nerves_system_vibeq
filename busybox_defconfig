@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.29.2
-# Mon Sep 24 16:09:29 2018
+# Tue Sep 25 12:44:13 2018
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -614,7 +614,7 @@ CONFIG_FEATURE_DMESG_PRETTY=y
 # CONFIG_FEATURE_HEXDUMP_REVERSE is not set
 # CONFIG_HD is not set
 # CONFIG_XXD is not set
-# CONFIG_HWCLOCK is not set
+CONFIG_HWCLOCK=y
 # CONFIG_FEATURE_HWCLOCK_ADJTIME_FHS is not set
 # CONFIG_IONICE is not set
 # CONFIG_IPCRM is not set
@@ -623,7 +623,7 @@ CONFIG_FEATURE_DMESG_PRETTY=y
 # CONFIG_FEATURE_LAST_FANCY is not set
 # CONFIG_LOSETUP is not set
 # CONFIG_LSPCI is not set
-# CONFIG_LSUSB is not set
+CONFIG_LSUSB=y
 # CONFIG_MDEV is not set
 # CONFIG_FEATURE_MDEV_CONF is not set
 # CONFIG_FEATURE_MDEV_RENAME is not set
