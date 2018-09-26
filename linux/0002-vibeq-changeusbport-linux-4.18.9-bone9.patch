@@ -1,0 +1,14 @@
+diff -Naur --no-dereference a/arch/arm/boot/dts/am335x-bone-common.dtsi b/arch/arm/boot/dts/am335x-bone-common.dtsi
+--- a/arch/arm/boot/dts/am335x-bone-common.dtsi	2018-09-20 06:41:37.000000000 +1000
++++ b/arch/arm/boot/dts/am335x-bone-common.dtsi	2018-09-26 11:23:40.331134300 +1000
+@@ -212,9 +212,7 @@
+ 
+ &usb0 {
+ 	status = "okay";
+-	dr_mode = "peripheral";
+-	interrupts-extended = <&intc 18 &tps 0>;
+-	interrupt-names = "mc", "vbus";
++	dr_mode = "host";
+ };
+ 
+ &usb1 {
