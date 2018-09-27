@@ -1,4 +1,4 @@
-# Generic BeagleBone Support
+# Yantrr VIBEQ (Beaglebone Black with 4G Modem) Support
 
 [![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_bbb.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_bbb)
 [![Hex version](https://img.shields.io/hexpm/v/nerves_system_bbb.svg "Hex version")](https://hex.pm/packages/nerves_system_bbb)
@@ -7,7 +7,7 @@ This is the base Nerves System configuration for the [BeagleBone Black](http://b
 [BeagleBone Green](http://beagleboard.org/green), [BeagleBone Green Wireless](https://beagleboard.org/green-wireless/),
 and [PocketBeagle](https://beagleboard.org/pocket).
 
-![BeagleBone Black image](assets/images/beaglebone-black.png)
+![Yantrr VIBEQ image](assets/images/VIBEQ.jpg)
 <br><sup>[Image credit](#fritzing)</sup>
 
 | Feature              | Description                     |
