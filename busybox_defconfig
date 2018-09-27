@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.29.2
-# Tue Sep 25 12:44:13 2018
+# Thu Sep 27 15:20:48 2018
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -409,7 +409,7 @@ CONFIG_DEFAULT_SETFONT_DIR=""
 # CONFIG_FEATURE_DIFF_DIR is not set
 # CONFIG_ED is not set
 # CONFIG_PATCH is not set
-# CONFIG_SED is not set
+CONFIG_SED=y
 # CONFIG_VI is not set
 CONFIG_FEATURE_VI_MAX_LEN=0
 # CONFIG_FEATURE_VI_8BIT is not set
@@ -624,7 +624,7 @@ CONFIG_HWCLOCK=y
 # CONFIG_LOSETUP is not set
 # CONFIG_LSPCI is not set
 CONFIG_LSUSB=y
-# CONFIG_MDEV is not set
+CONFIG_MDEV=y
 # CONFIG_FEATURE_MDEV_CONF is not set
 # CONFIG_FEATURE_MDEV_RENAME is not set
 # CONFIG_FEATURE_MDEV_RENAME_REGEXP is not set
