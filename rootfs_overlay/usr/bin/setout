@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "Setting $1 to "
+echo $2 > /sys/class/gpio/gpio$1/direction
+cat /sys/class/gpio/gpio$1/value
