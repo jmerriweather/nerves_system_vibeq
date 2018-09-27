@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.29.2
-# Thu Sep 27 16:07:56 2018
+# Thu Sep 27 16:34:59 2018
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -266,7 +266,7 @@ CONFIG_FEATURE_MD5_SHA1_SUM_CHECK=y
 CONFIG_MKDIR=y
 # CONFIG_MKFIFO is not set
 # CONFIG_MKNOD is not set
-# CONFIG_MKTEMP is not set
+CONFIG_MKTEMP=y
 CONFIG_MV=y
 # CONFIG_NICE is not set
 # CONFIG_NL is not set
@@ -310,9 +310,9 @@ CONFIG_TEST1=y
 CONFIG_TEST2=y
 # CONFIG_FEATURE_TEST_64 is not set
 # CONFIG_TIMEOUT is not set
-# CONFIG_TOUCH is not set
-# CONFIG_FEATURE_TOUCH_NODEREF is not set
-# CONFIG_FEATURE_TOUCH_SUSV3 is not set
+CONFIG_TOUCH=y
+CONFIG_FEATURE_TOUCH_NODEREF=y
+CONFIG_FEATURE_TOUCH_SUSV3=y
 # CONFIG_TR is not set
 # CONFIG_FEATURE_TR_CLASSES is not set
 # CONFIG_FEATURE_TR_EQUIV is not set
@@ -909,7 +909,7 @@ CONFIG_FEATURE_NTPD_CONF=y
 # CONFIG_PING6 is not set
 # CONFIG_FEATURE_FANCY_PING is not set
 # CONFIG_PSCAN is not set
-# CONFIG_ROUTE is not set
+CONFIG_ROUTE=y
 # CONFIG_SLATTACH is not set
 # CONFIG_SSL_CLIENT is not set
 CONFIG_TC=y
