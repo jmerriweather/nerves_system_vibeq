@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo Setting $1 as input
-echo "in" > /sys/class/gpio/gpio$1/direction
