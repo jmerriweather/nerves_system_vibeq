@@ -1,11 +1,6 @@
 # Yantrr VIBEQ (Beaglebone Black with 4G Modem) Support
 
-[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_bbb.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_bbb)
-[![Hex version](https://img.shields.io/hexpm/v/nerves_system_bbb.svg "Hex version")](https://hex.pm/packages/nerves_system_bbb)
-
-This is the base Nerves System configuration for the [BeagleBone Black](http://beagleboard.org/black),
-[BeagleBone Green](http://beagleboard.org/green), [BeagleBone Green Wireless](https://beagleboard.org/green-wireless/),
-and [PocketBeagle](https://beagleboard.org/pocket).
+This is the base Nerves System configuration for the [Yantrr VIBEQ](http://yantrr.com/products/vibe-iot/vibeq-4gec25-aut).
 
 ![Yantrr VIBEQ image](assets/images/VIBEQ.jpg)
 <br><sup>[Image credit](#fritzing)</sup>
@@ -29,7 +24,7 @@ and [PocketBeagle](https://beagleboard.org/pocket).
 ## Using
 
 The most common way of using this Nerves System is create a project with `mix
-nerves.new` and to export `MIX_TARGET=bbb`. See the [Getting started
+nerves.new` and to export `MIX_TARGET=vibeq`. See the [Getting started
 guide](https://hexdocs.pm/nerves/getting-started.html#creating-a-new-nerves-app)
 for more information.
 
@@ -256,20 +251,6 @@ If you are unsure what driver your WiFi dongle requires, run Raspbian and
 configure WiFi for your device. At a shell prompt, run `lsmod` to see which
 drivers are loaded.  Running `dmesg` may also give a clue. When using `dmesg`,
 reinsert the USB dongle to generate new log messages if you don't see them.
-
-## Beaglebone Green WiFi
-
-Initial support for the BBGW's onboard wireless module is available. To try it
-out, run (assuming you have Nerves.Network in your image):
-
-```elixir
-:os.cmd('modprobe wl18xx')
-:os.cmd('modprobe wlcore-sdio')
-Nerves.Network.setup "wlan0", ssid: "xxx", key_mgmt: :"WPA-PSK", psk: "yyy"
-```
-
-Be aware that this Nerves system does not configure the MAC address. The result
-is that only one BBGW may exist on the WiFi network at a time.
 
 ## Installation
 
