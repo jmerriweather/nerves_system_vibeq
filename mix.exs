@@ -34,9 +34,9 @@ defmodule NervesSystemBbb.MixProject do
   defp nerves_package do
     [
       type: :system,
-      artifact_sites: [
-        {:github_releases, "jmerriweather/#{@app}"}
-      ],
+      # artifact_sites: [
+      #   {:github_releases, "jmerriweather/#{@app}"}
+      # ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
       platform_config: [
